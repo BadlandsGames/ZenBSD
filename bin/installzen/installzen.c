@@ -17,10 +17,11 @@ __RCSID("$NetBSD: echo.c,v 1.23 2021/11/16 21:38:29 rillig Exp $");
 #include <string.h>
 
 /* ARGSUSED */
-int
-main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	return system(
+        "pkgin install snapd"
+        "snap install powershell --classic"
+        "snap install busybox-static"
         "pkgin update"
         "pkgin install -y openbox"
         "if [ ! -f ~/.xinitrc ]; then cp /etc/X11/xinit/xinitrc ~/.xinitrc fi"
