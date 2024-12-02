@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
         "snap install tmux"
         "snap install chezmoi"
         "snap install opentofu"
+        "snap install kubectl"
         "pkgin update"
         "pkgin install -y openbox"
         "if [ ! -f ~/.xinitrc ]; then cp /etc/X11/xinit/xinitrc ~/.xinitrc fi"
